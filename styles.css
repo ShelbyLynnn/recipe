@@ -52,3 +52,180 @@ table {
 
 /* ROOT STYLES */
 
+:root {
+    --font-color: #0D0D0D;
+    --content-background: #F2F2F2;
+    --background: #7ABFBF;
+    --rgba: rgba(122, 191, 191, 5);
+    --accent: #EB5428;
+    --footer: #fff;
+
+    --main-font: "Bebas Neue", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+
+}
+
+html {
+    background-color: var(--background);
+}
+
+body {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--content-background);
+}
+
+h1 { 
+    font-family: var(--main-font);
+    font-size: 40px;
+}
+
+h2 {
+    font-family: var(--main-font);
+    font-size: 30px;
+}
+
+h3 {
+    font-family: var(--main-font);
+    font-size: 25px;
+}
+
+h4 {
+    font-family: var(--main-font);
+    font-size: 20px;
+}
+
+/* I added the h4 because the header doesn't have a nav or menu, and the h3 wasn't small enough. I feel like this is the same concept. */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    background-color: var(--footer);
+}
+
+nav {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+}
+
+nav a {
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+
+nav span {
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+
+
+#logo  {
+    background-color: var(--accent);
+    display: grid;
+    width: 1fr;
+    height: auto;
+    place-content: center;
+}
+
+#logo svg {
+    background-color: var(--accent);
+}
+
+#hamburger {
+    background-color: var(--footer);
+    display: grid;
+    place-content: center;
+    height: auto;
+    text-align: center;
+}
+
+#hamburger svg {
+    background-color: var(--footer);  
+}
+
+#avatar {
+    display: grid;
+    place-items: center;
+    background-color: var(--footer);
+    height: auto;
+}
+
+#avatar svg {
+    background-color: var(--footer);
+}
+
+
+menu {
+    width: 100%;
+}
+
+menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2em;
+}
+
+menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+
+menu li a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+#search {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#search button {
+    border: none;
+}
+
+#social li {
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+}
+
+dd {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+}
+
+dt {
+    font-size: 16px;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+
+li {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+}
+
+input {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+}
+
+
+
+
+footer {
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+
